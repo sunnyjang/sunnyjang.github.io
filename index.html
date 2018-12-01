@@ -1,47 +1,66 @@
 <style>
 	body {
-		background-color: pink;
+		background-color: #E9D4FF;
 	}
 	* {
         box-sizing: border-box;
 	}
 	.column {
     float: left;
-    width: 25%;
+    width: 50%;
     padding: 10px;
+
 	}
 	.column img {
     	margin-top: 12px;
+      height: 1000px;
 	}
 	.row:after {
     	content: "";
     	display: table;
     	clear: both;
 	}
+  .container {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 72px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 </style>
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 <center>
 <body>
-<h1>hi it's sunny</h1>
+<h1>welcome to my photo collection</h1>
+<h3>by sunny jang</h3>
 <h2><i class="em em-sparkling_heart"></i><i class="em em-unicorn_face"></i><i class="em em-rainbow"></i><i class="em em-stuck_out_tongue"></i></h2>
 <p></p>
 <div class="row"> 
   <div class="column">
-    <img src="a2.JPG" style="width:100%">
-    <img src="a3.JPG" style="width:100%">
+    <div class="container">
+      <img src="s2.JPG" style="width:100%">  
+      <div class="centered"><a href="https://sunnyjang.github.io/sunnytravel/">TRAVEL</a></div>
+    </div>
+    <div class="container">
+      <img src="s4.JPG" style="width:100%">  
+      <div class="centered"><a href="https://sunnyjang.github.io/sunnystuff/">STUFF</a></div>
+    </div>
   </div>
   <div class="column">
-    <img src="a7.JPG" style="width:100%">
-    <img src="a8.JPG" style="width:100%">
+    <div class="container">
+      <img src="s3.JPG" style="width:100%">  
+      <div class="centered"><a href="https://sunnyjang.github.io/sunnyfudo/">FOOD</a></div>
+    </div>
+    <div class="container">
+      <img src="s1.JPG" style="width:100%">  
+      <div class="centered">about me</div>
+    </div>
   </div> 
-  <div class="column">
-    <img src="a12.JPG" style="width:100%">
-    <img src="a13.JPG" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="a18.JPG" style="width:100%">
-    <img src="a19.JPG" style="width:100%">
-  </div>
 </div>
 </body>
 </center>
