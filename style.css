@@ -9,20 +9,19 @@ body {
 h1 {
     color: white;
     font-size: 130px;
-    margin: 0px;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    margin: 0;
+    top: 280px;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 
 /* the description */
 h4 { 
     color: white;
     margin: 0px;
-    position: absolute;
-    top: 65%;
+    position: relative;
+    top: 230px;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -43,7 +42,23 @@ h3 {
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ff69b4;
+  font-size: 20px;
 }
